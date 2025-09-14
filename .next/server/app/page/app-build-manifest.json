@@ -1,0 +1,29 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/dbac0_next_dist_fa3e3e2c._.js",
+      "static/chunks/business-consulting_src_app_favicon_ico_mjs_625056a7._.js",
+      "static/chunks/[root-of-the-server]__2cf35957._.css",
+      "static/chunks/business-consulting_src_app_layout_tsx_54cfc609._.js",
+      "static/chunks/dbac0_next_dist_client_components_builtin_global-error_8a5da64d.js",
+      "static/chunks/dbac0_next_472c21e8._.js",
+      "static/chunks/dbac0_@headlessui_react_dist_1e362c17._.js",
+      "static/chunks/dbac0_@floating-ui_react_dist_05809dee._.js",
+      "static/chunks/dbac0_swiper_51a75b75._.js",
+      "static/chunks/dbac0_tailwind-merge_dist_bundle-mjs_mjs_9281fe57._.js",
+      "static/chunks/dbac0_2638a493._.js",
+      "static/chunks/business-consulting_src_21afb651._.js",
+      "static/chunks/dbac0_swiper_ee0efb21._.css",
+      "static/chunks/business-consulting_src_app_page_tsx_8a5da64d._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_270a9953._.js",
+      "static/chunks/dbac0_next_dist_compiled_react-dom_dc63e466._.js",
+      "static/chunks/dbac0_next_dist_compiled_next-devtools_index_3e6bf464.js",
+      "static/chunks/dbac0_next_dist_compiled_e23c5853._.js",
+      "static/chunks/dbac0_next_dist_client_3597aa4d._.js",
+      "static/chunks/dbac0_next_dist_939e2a95._.js",
+      "static/chunks/dbac0_@swc_helpers_cjs_6ad63f07._.js",
+      "static/chunks/business-consulting_a0ff3932._.js",
+      "static/chunks/turbopack-business-consulting_0dd53cde._.js"
+    ]
+  }
+}
