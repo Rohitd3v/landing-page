@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-
 import "swiper/css/scrollbar";
 
 interface Founder {
@@ -62,23 +61,42 @@ export default function TeamMembers() {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={1}
-      slidesPerView={4}
+      spaceBetween={20}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
+      breakpoints={{
+        // when window width is >= 320px (mobile)
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        // when window width is >= 640px (tablet)
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        // when window width is >= 1024px (desktop)
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        // when window width is >= 1280px (large desktop)
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      }}
     >
       {founders.map((item, index) => (
         <SwiperSlide key={index}>
-          <div className="flex flex-col p-4">
+          <div className="flex flex-col p-4 text-center">
             <Image
               src={item.image}
               alt={item.name}
               width={400}
               height={400}
-              className="w-100 h-80 rounded-lg"
+              className="w-full h-80 object-cover rounded-lg"
             />
             <h3 className="mt-4 font-bold text-black">{item.name}</h3>
             <p className="text-black">{item.role}</p>

@@ -81,9 +81,10 @@ export const Footer7 = ({
   legalLinks = defaultLegalLinks,
 }: Footer7Props) => {
   return (
-    <section className="py-32 bg-[#111728] w-full pb-0">
-      <div className="container mx-auto">
+    <section className="w-full bg-[#111728] py-16 md:py-24 lg:py-32">
+      <div className="container mx-auto px-4">
         <div className="flex w-full flex-col justify-between gap-10 lg:flex-row lg:items-start lg:text-left">
+          {/* Left block */}
           <div className="flex w-full flex-col justify-between gap-6 lg:items-start">
             {/* Logo */}
             <div className="flex items-center gap-2 lg:justify-start">
@@ -95,16 +96,16 @@ export const Footer7 = ({
                   className="h-8"
                 />
               </a>
-              <h2 className="text-xl font-semibold">{logo.title}</h2>
+              <h2 className="text-xl font-semibold text-white">{logo.title}</h2>
             </div>
-            <p className="max-w-[70%] text-sm text-muted-foreground">
+            <p className="max-w-full text-sm text-muted-foreground md:max-w-[70%]">
               {description}
             </p>
-            <ul className="flex items-center space-x-6 text-muted-foreground">
+            <ul className="flex items-center gap-4 sm:gap-6">
               {socialLinks.map((social, idx) => (
                 <li
                   key={idx}
-                  className="font-medium text-white hover:text-primary"
+                  className="font-medium text-white transition-colors hover:text-primary"
                 >
                   <a href={social.href} aria-label={social.label}>
                     {social.icon}
@@ -113,15 +114,17 @@ export const Footer7 = ({
               ))}
             </ul>
           </div>
-          <div className="grid w-full gap-6 md:grid-cols-3 lg:gap-20">
+
+          {/* Right block (links) */}
+          <div className="grid w-full gap-8 grid-cols-2 md:grid-cols-3 lg:gap-20">
             {sections.map((section, sectionIdx) => (
               <div key={sectionIdx}>
                 <h3 className="mb-4 font-bold text-white">{section.title}</h3>
-                <ul className="space-y-3 text-sm text-muted-foreground">
+                <ul className="space-y-3 text-sm">
                   {section.links.map((link, linkIdx) => (
                     <li
                       key={linkIdx}
-                      className="font-medium hover:text-primary text-white"
+                      className="font-medium text-white transition-colors hover:text-primary"
                     >
                       <a href={link.href}>{link.name}</a>
                     </li>
@@ -131,12 +134,16 @@ export const Footer7 = ({
             ))}
           </div>
         </div>
-        <div className="mt-8 flex flex-col justify-between gap-4 border-t pt-8 text-xs font-medium text-muted-foreground md:flex-row md:items-center md:text-left">
-          <p className="order-2 lg:order-1">{copyright}</p>
-          <ul className="order-1 flex flex-col gap-2 md:order-2 md:flex-row">
+
+        {/* Bottom legal bar */}
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-gray-700 pt-6 text-xs font-medium text-muted-foreground md:flex-row md:items-center md:text-left">
+          <p className="order-2 text-center md:order-1 md:text-left">
+            {copyright}
+          </p>
+          <ul className="order-1 flex flex-col items-center gap-2 md:order-2 md:flex-row md:gap-6">
             {legalLinks.map((link, idx) => (
-              <li key={idx} className="hover:text-primary">
-                <a href={link.href}> {link.name}</a>
+              <li key={idx} className="hover:text-primary transition-colors">
+                <a href={link.href}>{link.name}</a>
               </li>
             ))}
           </ul>

@@ -223,8 +223,7 @@ function TeamMembers() {
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$scrollbar$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Scrollbar$3e$__["Scrollbar"],
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$a11y$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__A11y$3e$__["A11y"]
         ],
-        spaceBetween: 1,
-        slidesPerView: 4,
+        spaceBetween: 20,
         navigation: true,
         pagination: {
             clickable: true
@@ -232,21 +231,41 @@ function TeamMembers() {
         scrollbar: {
             draggable: true
         },
-        onSwiper: (swiper)=>console.log(swiper),
-        onSlideChange: ()=>console.log("slide change"),
+        breakpoints: {
+            // when window width is >= 320px (mobile)
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            // when window width is >= 640px (tablet)
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            // when window width is >= 1024px (desktop)
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            // when window width is >= 1280px (large desktop)
+            1280: {
+                slidesPerView: 4,
+                spaceBetween: 20
+            }
+        },
         children: founders.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SwiperSlide"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex flex-col p-4",
+                    className: "flex flex-col p-4 text-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: item.image,
                             alt: item.name,
                             width: 400,
                             height: 400,
-                            className: "w-100 h-80 rounded-lg"
+                            className: "w-full h-80 object-cover rounded-lg"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/TeamMembersSwiper.tsx",
-                            lineNumber: 76,
+                            lineNumber: 94,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -254,7 +273,7 @@ function TeamMembers() {
                             children: item.name
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/TeamMembersSwiper.tsx",
-                            lineNumber: 83,
+                            lineNumber: 101,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -262,23 +281,23 @@ function TeamMembers() {
                             children: item.role
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/TeamMembersSwiper.tsx",
-                            lineNumber: 84,
+                            lineNumber: 102,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/components/TeamMembersSwiper.tsx",
-                    lineNumber: 75,
+                    lineNumber: 93,
                     columnNumber: 11
                 }, this)
             }, index, false, {
                 fileName: "[project]/src/app/components/TeamMembersSwiper.tsx",
-                lineNumber: 74,
+                lineNumber: 92,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/app/components/TeamMembersSwiper.tsx",
-        lineNumber: 63,
+        lineNumber: 62,
         columnNumber: 5
     }, this);
 }

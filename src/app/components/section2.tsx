@@ -82,8 +82,7 @@ export default function Section2() {
   return (
     <section className="w-full bg-white py-12 px-4 sm:px-6 lg:px-20">
       <LogoSwiper />
-
-      <div className="flex flex-col lg:flex-row gap-8 border border-gray-300 p-6 rounded-xl">
+      <div className="flex flex-col mt-6 lg:flex-row gap-8 border border-gray-300 p-6 rounded-xl">
         {/* Left Column */}
         <div className="lg:w-1/2 flex flex-col text-center lg:text-left">
           <p className="font-bold mb-3 text-red-500">Features</p>
