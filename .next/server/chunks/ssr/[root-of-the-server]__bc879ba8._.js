@@ -886,19 +886,8 @@ function Section2() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                 className: "font-bold text-gray-900 text-lg sm:text-xl lg:text-2xl",
-                                children: [
-                                    "Less Accounting is trusted by thousands",
-                                    " ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
-                                        className: "hidden sm:block"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/section2.tsx",
-                                        lineNumber: 91,
-                                        columnNumber: 13
-                                    }, this),
-                                    " of companies"
-                                ]
-                            }, void 0, true, {
+                                children: "Less Accounting is trusted by thousands of companies"
+                            }, void 0, false, {
                                 fileName: "[project]/src/app/components/section2.tsx",
                                 lineNumber: 89,
                                 columnNumber: 11
@@ -909,12 +898,12 @@ function Section2() {
                                     children: "Learn More"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/section2.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 93,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/section2.tsx",
-                                lineNumber: 93,
+                                lineNumber: 92,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -935,7 +924,7 @@ function Section2() {
                                             children: item.icon
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/section2.tsx",
-                                            lineNumber: 106,
+                                            lineNumber: 104,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -943,7 +932,7 @@ function Section2() {
                                             children: item.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/section2.tsx",
-                                            lineNumber: 107,
+                                            lineNumber: 105,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -951,23 +940,23 @@ function Section2() {
                                             children: item.disc
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/components/section2.tsx",
-                                            lineNumber: 110,
+                                            lineNumber: 108,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/src/app/components/section2.tsx",
-                                    lineNumber: 102,
+                                    lineNumber: 100,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/section2.tsx",
-                            lineNumber: 100,
+                            lineNumber: 98,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/section2.tsx",
-                        lineNumber: 99,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1066,17 +1055,9 @@ function Section3() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-black text-xs sm:text-sm leading-snug",
-                                children: [
-                                    "“Just one small positive thought in",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                        fileName: "[project]/src/app/components/section3.tsx",
-                                        lineNumber: 38,
-                                        columnNumber: 13
-                                    }, this),
-                                    " the morning can change your whole day“"
-                                ]
-                            }, void 0, true, {
+                                className: "text-black text-xs sm:text-sm ",
+                                children: "“Just one small positive thought in the morning can change your whole day“"
+                            }, void 0, false, {
                                 fileName: "[project]/src/app/components/section3.tsx",
                                 lineNumber: 36,
                                 columnNumber: 11
@@ -1105,7 +1086,7 @@ function Section3() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "font-bold text-gray-900 text-2xl sm:text-3xl md:text-4xl lg:text-4xl mb-5 leading-snug",
+                        className: "font-bold text-gray-900  text-3xl sm:text-4xl lg:text-5xl mb-5 leading-snug",
                         children: "We Are Business Consulting & Credit Repair Experts."
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/section3.tsx",
@@ -1275,7 +1256,7 @@ function Section4() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "text-black font-bold  text-5xl mb-8",
+                        className: "text-black font-bold  text-3xl sm:text-4xl lg:text-5xl mb-8",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             children: "We Provide The Best service For Consulting"
                         }, void 0, false, {
@@ -1673,7 +1654,7 @@ function Section5() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: " font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl",
+                        className: " font-bold text-gray-900  text-3xl sm:text-4xl lg:text-5xl",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             children: " Reasons Why We are Best Business consulting Agency."
                         }, void 0, false, {
@@ -1828,7 +1809,7 @@ function Section6() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl",
+                        className: "font-bold text-gray-900  text-3xl sm:text-4xl lg:text-5xl",
                         children: "Lets Looks Our Global Projects"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/section6.tsx",
@@ -2188,7 +2169,7 @@ function Section7() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-black text-4xl font-bold mb-8",
+                        className: "text-black   text-3xl sm:text-4xl lg:text-5xl font-bold mb-8",
                         children: "What Our Client Says"
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/section7.tsx",
@@ -2574,7 +2555,7 @@ function Section8() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-black text-4xl font-bold sm:text-5xl",
+                                className: "text-black  text-3xl sm:text-4xl lg:text-5xl font-bold ",
                                 children: [
                                     "Get every single ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {

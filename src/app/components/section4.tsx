@@ -82,7 +82,7 @@ export default function Section4() {
         <div className="text-red-700 mb-3">
           <p>our services</p>
         </div>
-        <div className="text-black font-bold  text-5xl mb-8">
+        <div className="text-black font-bold  text-3xl sm:text-4xl lg:text-5xl mb-8">
           <h1>We Provide The Best service For Consulting</h1>
         </div>
 

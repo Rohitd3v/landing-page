@@ -87,14 +87,12 @@ export default function Section2() {
         <div className="lg:w-1/2 flex flex-col text-center lg:text-left">
           <p className="font-bold mb-3 text-red-500">Features</p>
           <h1 className="font-bold text-gray-900 text-lg sm:text-xl lg:text-2xl">
-            Less Accounting is trusted by thousands{" "}
-            <br className="hidden sm:block" /> of companies
+            Less Accounting is trusted by thousands of companies
           </h1>
           <div className="mt-6 flex justify-center lg:justify-start">
             <Button>Learn More</Button>
           </div>
         </div>
-
         {/* Right Column */}
         <div className="lg:w-1/2 flex flex-col gap-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

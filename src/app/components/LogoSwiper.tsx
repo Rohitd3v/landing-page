@@ -10,8 +10,8 @@ const LogoSwiper = () => {
   return (
     <Swiper
       modules={[Autoplay]} // Add Autoplay here
-      spaceBetween={15}
-      slidesPerView={5}
+      spaceBetween={25}
+      slidesPerView={3}
       loop={true}
       autoplay={{ delay: 2000, disableOnInteraction: false }}
       breakpoints={{

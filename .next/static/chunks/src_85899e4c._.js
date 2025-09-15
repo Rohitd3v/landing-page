@@ -21,8 +21,8 @@ const LogoSwiper = ()=>{
         modules: [
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$autoplay$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Autoplay$3e$__["Autoplay"]
         ],
-        spaceBetween: 15,
-        slidesPerView: 5,
+        spaceBetween: 25,
+        slidesPerView: 3,
         loop: true,
         autoplay: {
             delay: 2000,

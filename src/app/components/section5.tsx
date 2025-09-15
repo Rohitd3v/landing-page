@@ -96,7 +96,7 @@ export default function Section5() {
           <p>why choose Us</p>
         </div>
 
-        <div className=" font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl">
+        <div className=" font-bold text-gray-900  text-3xl sm:text-4xl lg:text-5xl">
           <h1> Reasons Why We are Best Business consulting Agency.</h1>
         </div>
         <div>

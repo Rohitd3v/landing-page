@@ -33,9 +33,9 @@ export default function Section3() {
               <span className="text-red-700 font-bold">Founder</span>
             </p>
           </div>
-          <p className="text-black text-xs sm:text-sm leading-snug">
-            “Just one small positive thought in
-            <br /> the morning can change your whole day“
+          <p className="text-black text-xs sm:text-sm ">
+            “Just one small positive thought in the morning can change your
+            whole day“
           </p>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default function Section3() {
       {/* Right Content */}
       <div className="lg:w-1/2 w-full text-center lg:text-left">
         <p className="font-bold mb-4 text-red-500">Features</p>
-        <h1 className="font-bold text-gray-900 text-2xl sm:text-3xl md:text-4xl lg:text-4xl mb-5 leading-snug">
+        <h1 className="font-bold text-gray-900  text-3xl sm:text-4xl lg:text-5xl mb-5 leading-snug">
           We Are Business Consulting & Credit Repair Experts.
         </h1>
         <p className="text-black text-sm sm:text-base mb-6 leading-relaxed">

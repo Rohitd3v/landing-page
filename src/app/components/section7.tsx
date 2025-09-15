@@ -24,7 +24,7 @@ export default function Section7() {
       {/* Testimonials Section */}
       <div className="flex flex-col items-center justify-center bg-white py-12">
         <p className="text-red-600 mb-2">Testimonial</p>
-        <p className="text-black text-4xl font-bold mb-8">
+        <p className="text-black   text-3xl sm:text-4xl lg:text-5xl font-bold mb-8">
           What Our Client Says
         </p>
 
