@@ -3,23 +3,24 @@ import { Button } from "./utils/buttons";
 
 export default function Section3() {
   return (
-    <div className="w-full bg-white mx-auto flex flex-col-reverse lg:flex-row items-center px-4 lg:px-20 pt-8 pb-0">
-      {/* Right Image */}
-      <div className=" relative lg:w-1/2 w-full flex justify-center mb-8 lg:mb-0">
+    <div className="w-full bg-white mx-auto flex flex-col-reverse lg:flex-row items-center px-4 sm:px-6 lg:px-20 pt-8 pb-0">
+      {/* Left Image */}
+      <div className="relative lg:w-1/2 w-full flex justify-center mb-8 lg:mb-0">
         <Image
           src="/images/girlpng.png"
           alt="office"
           width={400}
           height={400}
-          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full h-auto"
+          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full h-auto rounded-xl"
         />
-        <div className="absolute flex flex-col bg-yellow-500 bottom-6 p-4 lg:left-0 ">
-          <div className="flex flex-row mb-3 items-center gap-2">
+        {/* Testimonial Card (floating) */}
+        <div className="absolute -bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 lg:left-4 lg:translate-x-0 bg-yellow-500 p-5 sm:p-6 rounded-xl shadow-2xl w-11/12 sm:w-80 lg:w-72">
+          <div className="flex items-center gap-2 mb-2 sm:mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="size-10 text-black"
+              className="w-6 h-6 sm:w-7 sm:h-7 text-black"
             >
               <path
                 fillRule="evenodd"
@@ -27,34 +28,32 @@ export default function Section3() {
                 clipRule="evenodd"
               />
             </svg>
-            <p className="text-black font-bold text-xl">
+            <p className="text-black font-bold text-sm sm:text-base">
               Rohit Negi,{" "}
               <span className="text-red-700 font-bold">Founder</span>
             </p>
           </div>
-          <div className="text-black">
-            <p>
-              “Just one small positive thought in
-              <br /> the morning can change your whole day“
-            </p>
-          </div>
+          <p className="text-black text-xs sm:text-sm leading-snug">
+            “Just one small positive thought in
+            <br /> the morning can change your whole day“
+          </p>
         </div>
       </div>
 
-      {/* Left Content */}
-      <div className="lg:w-1/2 w-full text-center lg:text-left px-4">
-        <p className="text-left font-bold mb-4 text-red-500">Features</p>
-        <h1 className="font-bold text-gray-900 text-3xl sm:text-4xl lg:text-4xl mb-5 ">
-          We Are Business <br /> Consulting & Credit <br /> Repair Experts.
+      {/* Right Content */}
+      <div className="lg:w-1/2 w-full text-center lg:text-left">
+        <p className="font-bold mb-4 text-red-500">Features</p>
+        <h1 className="font-bold text-gray-900 text-2xl sm:text-3xl md:text-4xl lg:text-4xl mb-5 leading-snug">
+          We Are Business Consulting & Credit Repair Experts.
         </h1>
-        <p className="text-black text-sm sm:text-base mb-6">
+        <p className="text-black text-sm sm:text-base mb-6 leading-relaxed">
           We are dedicated business consulting and credit repair experts
           committed to helping you achieve your financial goals. Our team
           provides strategic guidance to optimize your business operations and
           delivers personalized credit repair solutions to improve your
           financial standing.
         </p>
-        <div>
+        <div className="flex justify-center lg:justify-start">
           <Button>Learn More</Button>
         </div>
       </div>

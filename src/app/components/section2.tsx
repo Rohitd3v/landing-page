@@ -78,36 +78,40 @@ export default function Section2() {
       disc: "Essential formula for how a Business is going to compets.",
     },
   ];
+
   return (
-    <section className="w-full bg-white  py-12 px-4 sm:px-6 lg:px-20">
+    <section className="w-full bg-white py-12 px-4 sm:px-6 lg:px-20">
       <LogoSwiper />
 
-      <div className="flex flex-col mt-10 lg:flex-row gap-8 border border-gray-300 p-6  rounded-xl">
+      <div className="flex flex-col lg:flex-row gap-8 border border-gray-300 p-6 rounded-xl">
         {/* Left Column */}
-        <div className="text-center lg:text-left lg:w-1/2">
-          <p className="text-left font-bold mb-5 text-red-500">Fetures</p>
-          <h1 className=" font-bold text-gray-900 text-lg ">
-            Less Accounting is trusted by thousand <br /> of companies
+        <div className="lg:w-1/2 flex flex-col text-center lg:text-left">
+          <p className="font-bold mb-3 text-red-500">Features</p>
+          <h1 className="font-bold text-gray-900 text-lg sm:text-xl lg:text-2xl">
+            Less Accounting is trusted by thousands{" "}
+            <br className="hidden sm:block" /> of companies
           </h1>
-          <div className="mt-6 flex justify-center lg:justify-start gap-4">
+          <div className="mt-6 flex justify-center lg:justify-start">
             <Button>Learn More</Button>
           </div>
         </div>
 
         {/* Right Column */}
-        <div className=" flex justify-center"></div>
-
-        <div className="grid grid-cols-2 gap-4">
-          {items.map((item, index) => (
-            <div
-              key={index}
-              className="p-6 flex flex-col items-start text-left  "
-            >
-              <div className="mb-4">{item.icon}</div>
-              <h3 className="text-lg text-black font-bold mb-2">{item.name}</h3>
-              <p className="text-black">{item.disc}</p>
-            </div>
-          ))}
+        <div className="lg:w-1/2 flex flex-col gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {items.map((item, index) => (
+              <div
+                key={index}
+                className="p-4 sm:p-6 flex flex-col items-center sm:items-start text-center sm:text-left border rounded-lg hover:shadow-md transition-shadow duration-200"
+              >
+                <div className="mb-4 text-3xl">{item.icon}</div>
+                <h3 className="text-lg sm:text-xl font-bold mb-2">
+                  {item.name}
+                </h3>
+                <p className="text-gray-700">{item.disc}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

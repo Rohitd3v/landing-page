@@ -97,10 +97,7 @@ export default function Section5() {
         </div>
 
         <div className=" font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl">
-          <h1>
-            {" "}
-            Reasons Why We <br /> are Best Business <br /> consulting Agency.
-          </h1>
+          <h1> Reasons Why We are Best Business consulting Agency.</h1>
         </div>
         <div>
           <div className="flex flex-col text-black">
@@ -122,7 +119,7 @@ export default function Section5() {
         </div>
       </div>
       {/*right*/}
-      <div className="flex w-1/2">
+      <div className="flex w-1/2 hidden md:block ">
         <Image
           src="/images/girlpng.png"
           alt="office"

@@ -83,9 +83,7 @@ export default function Section4() {
           <p>our services</p>
         </div>
         <div className="text-black font-bold  text-5xl mb-8">
-          <h1>
-            We Provide The Best service <br /> For Consulting
-          </h1>
+          <h1>We Provide The Best service For Consulting</h1>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

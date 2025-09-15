@@ -37,7 +37,7 @@ export default function Section6() {
       <div className="flex flex-col items-center text-center space-y-4">
         <p className="text-red-600 font-semibold">Project and Case studies</p>
         <h1 className="font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl">
-          Lets Looks <br /> Our Global Projects
+          Lets Looks Our Global Projects
         </h1>
       </div>
 
