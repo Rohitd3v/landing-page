@@ -754,6 +754,10 @@
     margin-top: calc(var(--spacing) * 10);
   }
 
+  .mb-0 {
+    margin-bottom: calc(var(--spacing) * 0);
+  }
+
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -1329,6 +1333,10 @@
     border-top-color: var(--primary);
   }
 
+  .bg-\[\#111728\] {
+    background-color: #111728;
+  }
+
   .bg-\[\#E3E2E0\] {
     background-color: #e3e2e0;
   }
@@ -1542,12 +1550,20 @@
     padding-bottom: calc(var(--spacing) * 0);
   }
 
+  .pb-1 {
+    padding-bottom: calc(var(--spacing) * 1);
+  }
+
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
   }
 
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
   }
 
   .pl-1 {

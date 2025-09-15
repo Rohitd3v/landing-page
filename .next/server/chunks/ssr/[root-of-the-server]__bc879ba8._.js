@@ -149,7 +149,7 @@ const Footer7 = ({ logo = {
     title: "Shadcnblocks.com"
 }, sections = defaultSections, description = "A collection of components for your startup business or side project.", socialLinks = defaultSocialLinks, copyright = "© 2024 Shadcnblocks.com. All rights reserved.", legalLinks = defaultLegalLinks })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-32",
+        className: "py-32 bg-[#111728] w-full pb-0",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container mx-auto",
             children: [
@@ -204,14 +204,14 @@ const Footer7 = ({ logo = {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                     className: "flex items-center space-x-6 text-muted-foreground",
                                     children: socialLinks.map((social, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                            className: "font-medium hover:text-primary",
+                                            className: "font-medium text-white hover:text-primary",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                 href: social.href,
                                                 "aria-label": social.label,
                                                 children: social.icon
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ui/footer-7.tsx",
-                                                lineNumber: 106,
+                                                lineNumber: 109,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, idx, false, {
@@ -235,44 +235,44 @@ const Footer7 = ({ logo = {
                             children: sections.map((section, sectionIdx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "mb-4 font-bold",
+                                            className: "mb-4 font-bold text-white",
                                             children: section.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/footer-7.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 119,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                             className: "space-y-3 text-sm text-muted-foreground",
                                             children: section.links.map((link, linkIdx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                    className: "font-medium hover:text-primary",
+                                                    className: "font-medium hover:text-primary text-white",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                         href: link.href,
                                                         children: link.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/ui/footer-7.tsx",
-                                                        lineNumber: 123,
+                                                        lineNumber: 126,
                                                         columnNumber: 23
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 }, linkIdx, false, {
                                                     fileName: "[project]/src/components/ui/footer-7.tsx",
-                                                    lineNumber: 119,
+                                                    lineNumber: 122,
                                                     columnNumber: 21
                                                 }, ("TURBOPACK compile-time value", void 0)))
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ui/footer-7.tsx",
-                                            lineNumber: 117,
+                                            lineNumber: 120,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     ]
                                 }, sectionIdx, true, {
                                     fileName: "[project]/src/components/ui/footer-7.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 118,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)))
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/footer-7.tsx",
-                            lineNumber: 113,
+                            lineNumber: 116,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
@@ -282,14 +282,14 @@ const Footer7 = ({ logo = {
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0)),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mt-8 flex flex-col justify-between gap-4 border-t py-8 text-xs font-medium text-muted-foreground md:flex-row md:items-center md:text-left",
+                    className: "mt-8 flex flex-col justify-between gap-4 border-t pt-8 text-xs font-medium text-muted-foreground md:flex-row md:items-center md:text-left",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "order-2 lg:order-1",
                             children: copyright
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/footer-7.tsx",
-                            lineNumber: 132,
+                            lineNumber: 135,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0)),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -304,23 +304,23 @@ const Footer7 = ({ logo = {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ui/footer-7.tsx",
-                                        lineNumber: 136,
+                                        lineNumber: 139,
                                         columnNumber: 17
                                     }, ("TURBOPACK compile-time value", void 0))
                                 }, idx, false, {
                                     fileName: "[project]/src/components/ui/footer-7.tsx",
-                                    lineNumber: 135,
+                                    lineNumber: 138,
                                     columnNumber: 15
                                 }, ("TURBOPACK compile-time value", void 0)))
                         }, void 0, false, {
                             fileName: "[project]/src/components/ui/footer-7.tsx",
-                            lineNumber: 133,
+                            lineNumber: 136,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ui/footer-7.tsx",
-                    lineNumber: 131,
+                    lineNumber: 134,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             ]
