@@ -549,7 +549,7 @@ function NavBar() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "absolute inset-y-0 left-0 flex items-center sm:hidden",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$headlessui$2f$react$2f$dist$2f$headlessui$2e$esm$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["DisclosureButton"], {
-                                className: "group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500",
+                                className: "group relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "absolute -inset-0.5"
@@ -666,7 +666,7 @@ function NavBar() {
                             as: "a",
                             href: item.href,
                             "aria-current": item.current ? "page" : undefined,
-                            className: classNames(item.current ? "bg-gray-950/50 text-white" : "text-gray-300 hover:bg-white/5 hover:text-white", "block rounded-md px-3 py-2 text-base font-medium"),
+                            className: classNames(item.current ? "bg-gray-950/50 text-white" : "text-black hover:bg-white/5 hover:text-white", "block rounded-md px-3 py-2 text-base font-medium"),
                             children: item.name
                         }, item.name, false, {
                             fileName: "[project]/src/app/components/NavBar.tsx",
