@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Button2 } from "./utils/buttons";
 import { BlogPostWithSections } from "./utils/supabase/Relationtype";
 interface BlogCarouselProps {
-  posts: BlogPostWithSections;
+  posts: BlogPostWithSections[];
 }
 export default async function Section6({ posts }: BlogCarouselProps) {
   return (
@@ -60,7 +60,7 @@ export default async function Section6({ posts }: BlogCarouselProps) {
             className=" overflow-hidden hover:shadow-lg transition-shadow duration-300"
           >
             <Image
-              src={"/images/social-media.jpg"}
+              src={post.thumbnail as string}
               alt="post"
               width={400}
               height={200}

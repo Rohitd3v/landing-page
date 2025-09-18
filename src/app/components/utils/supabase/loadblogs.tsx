@@ -9,6 +9,7 @@ export async function getBlogPosts(): Promise<BlogPostWithSections[]> {
       id,
       title,
       author,
+      thumbnail,
       created_at,
       blog_sections (
         heading,

@@ -5,13 +5,11 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { BlogPostWithSections } from "./utils/supabase/Relationtype";
 
 interface BlogCarouselProps {
-  posts: BlogPostWithSections;
+  posts: BlogPostWithSections[];
 }
 export async function BlogCarousel({ posts }: BlogCarouselProps) {
   return (
@@ -23,7 +21,7 @@ export async function BlogCarousel({ posts }: BlogCarouselProps) {
               <Card>
                 <CardContent className="flex flex-col items-start p-4">
                   <Image
-                    src={"/images/social-media.jpg"}
+                    src={post.thumbnail as string}
                     alt={post.title}
                     width={400}
                     height={400}
@@ -42,8 +40,6 @@ export async function BlogCarousel({ posts }: BlogCarouselProps) {
           </CarouselItem>
         ))}
       </CarouselContent>
-      {/* <CarouselPrevious /> */}
-      {/* <CarouselNext /> */}
     </Carousel>
   );
 }
