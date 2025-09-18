@@ -70,7 +70,9 @@ export default async function Section6({ posts }: BlogCarouselProps) {
               <h2 className="text-black font-semibold mb-2">{post.title}</h2>
               <hr className="border-t border-gray-300 mb-2" />
               <div className="flex justify-between text-gray-500 text-sm">
-                <span>{post.created_at.split("T")[0]}</span>
+                <span>
+                  {post.created_at ? post.created_at.split("T")[0] : "Unknown"}
+                </span>
                 <span className="hover:text-red-600 cursor-pointer">
                   Read more
                 </span>
