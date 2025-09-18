@@ -92,8 +92,8 @@ export default function Section5() {
     <div className="w-full flex flex-col items-center lg:flex-row bg-white py-12 px-4 sm:px-6 lg:px-20 ">
       {/*left*/}
       <div className="flex flex-col md:w-1/2">
-        <div className="flex text-red-700 mb-3">
-          <p>why choose Us</p>
+        <div className="flex text-red-700 ">
+          <p className="font-bold mb-3 text-red-500">why choose Us</p>
         </div>
 
         <div className=" font-bold text-gray-900  text-3xl sm:text-4xl lg:text-5xl">

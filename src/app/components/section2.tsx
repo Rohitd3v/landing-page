@@ -80,7 +80,7 @@ export default function Section2() {
   ];
 
   return (
-    <section className="w-full bg-white py-12 px-4 sm:px-6 lg:px-20">
+    <section className="w-full bg-white py-8 px-4 sm:px-6 lg:px-20">
       <LogoSwiper />
       <div className="flex flex-col mt-6 lg:flex-row gap-8 border border-gray-300 p-6 rounded-xl">
         {/* Left Column */}

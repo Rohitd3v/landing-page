@@ -7,7 +7,7 @@ export default function Section8() {
       <div className="flex justify-between items-center flex-wrap">
         {/* Text content on the left */}
         <div className="flex flex-col">
-          <p className="text-red-600">Article and News</p>
+          <p className="font-bold mb-3 text-red-500">Article and News</p>
           <p className="text-black  text-3xl sm:text-4xl lg:text-5xl font-bold ">
             Get every single <br />
             news and blogs

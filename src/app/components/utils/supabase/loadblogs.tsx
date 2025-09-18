@@ -1,6 +1,7 @@
 import { supabase } from "./server";
+import type { BlogPostWithSections } from "./Relationtype";
 
-export async function getBlogPosts() {
+export async function getBlogPosts(): Promise<BlogPostWithSections[]> {
   const { data, error } = await supabase
     .from("blog_posts")
     .select(
@@ -19,9 +20,9 @@ export async function getBlogPosts() {
     .order("created_at", { ascending: false });
 
   if (error) {
-    console.error("Error fetching blog posts:", error);
+    console.error("Error fetching blog posts:", error.message);
     return [];
   }
 
-  return data;
+  return (data ?? []) as BlogPostWithSections[];
 }

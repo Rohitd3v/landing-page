@@ -79,8 +79,8 @@ export default function Section4() {
   return (
     <div className="w-full bg-[#E3E2E0] py-12 px-4 sm:px-6 lg:px-20">
       <div className="flex flex-col">
-        <div className="text-red-700 mb-3">
-          <p>our services</p>
+        <div>
+          <p className="font-bold mb-3 text-red-500">our services</p>
         </div>
         <div className="text-black font-bold  text-3xl sm:text-4xl lg:text-5xl mb-8">
           <h1>We Provide The Best service For Consulting</h1>
@@ -113,29 +113,29 @@ export default function Section4() {
 
         <div className="flex flex-row justify-around text-center text-black py-4  ">
           <div className="flex flex-col">
-            <p>
+            <p className="font-bold">
               <u>5310</u>
             </p>
-            <p className="text-gray-700">happy client</p>
+            <p className="text-gray-700">Happy Client</p>
           </div>
           <div className="flex flex-col">
-            <p>
+            <p className="font-bold">
               <u>5310</u>
             </p>
-            <p className="text-gray-700">Complete project</p>
+            <p className="text-gray-700">Complete Project</p>
           </div>
           <div className="flex flex-col">
-            <p>
+            <p className="font-bold">
               <u>5310</u>
             </p>
-            <p className="text-gray-700">Running work</p>
+            <p className="text-gray-700">Running Work</p>
           </div>
 
           <div className="flex flex-col">
-            <p>
+            <p className="font-bold">
               <u>5310</u>
             </p>
-            <p className="text-gray-700">winning Award</p>
+            <p className="text-gray-700">Winning Award</p>
           </div>
         </div>
 

@@ -42,7 +42,7 @@ export default function Section3() {
 
       {/* Right Content */}
       <div className="lg:w-1/2 w-full text-center lg:text-left">
-        <p className="font-bold mb-4 text-red-500">Features</p>
+        <p className="font-bold mb-3 text-red-500">Features</p>
         <h1 className="font-bold text-gray-900  text-3xl sm:text-4xl lg:text-5xl mb-5 leading-snug">
           We Are Business Consulting & Credit Repair Experts.
         </h1>

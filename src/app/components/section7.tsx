@@ -7,10 +7,10 @@ export default function Section7() {
     <div className="w-full bg-[#E4C788] py-12 px-4 sm:px-6 lg:px-20">
       {/* Section Heading */}
       <div className="flex flex-col mb-8">
-        <p className="text-red-600 mb-4">Meet Our Team</p>
+        <p className="font-bold mb-3 text-red-500">Meet Our Team</p>
         <div className="flex justify-between items-center">
           <p className="text-black text-5xl font-bold">
-            Experience <br /> Team Members
+            Experience Team Members
           </p>
           <Button3>Browse Services</Button3>
         </div>
@@ -23,7 +23,7 @@ export default function Section7() {
 
       {/* Testimonials Section */}
       <div className="flex flex-col items-center justify-center bg-white py-12">
-        <p className="text-red-600 mb-2">Testimonial</p>
+        <p className="font-bold mb-3 text-red-500">Testimonial</p>
         <p className="text-black   text-3xl sm:text-4xl lg:text-5xl font-bold mb-8">
           What Our Client Says
         </p>

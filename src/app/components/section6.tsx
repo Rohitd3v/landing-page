@@ -1,41 +1,15 @@
 import Image from "next/image";
 import { Button2 } from "./utils/buttons";
+import { getBlogPosts } from "./utils/supabase/loadblogs";
 
-interface Post {
-  thumbnail: string;
-  title: string;
-  date: string;
-}
-
-export default function Section6() {
-  const posts: Post[] = [
-    {
-      thumbnail: "/images/social-media.jpg",
-      title: "Why your client needs a responsive website",
-      date: "30-aug-2025",
-    },
-    {
-      thumbnail: "/images/social-media.jpg",
-      title: "Why your client needs a responsive website",
-      date: "30-aug-2025",
-    },
-    {
-      thumbnail: "/images/social-media.jpg",
-      title: "Why your client needs a responsive website",
-      date: "30-aug-2025",
-    },
-    {
-      thumbnail: "/images/social-media.jpg",
-      title: "Why your client needs a responsive website",
-      date: "30-aug-2025",
-    },
-  ];
+export default async function Section6() {
+  const posts = await getBlogPosts();
 
   return (
     <div className="w-full bg-white py-12 px-4 sm:px-6 lg:px-20">
       {/* Header Section */}
       <div className="flex flex-col items-center text-center space-y-4">
-        <p className="text-red-600 font-semibold">Project and Case studies</p>
+        <p className="font-bold mb-3 text-red-500">Project and Case studies</p>
         <h1 className="font-bold text-gray-900  text-3xl sm:text-4xl lg:text-5xl">
           Lets Looks Our Global Projects
         </h1>
@@ -86,7 +60,7 @@ export default function Section6() {
             className=" overflow-hidden hover:shadow-lg transition-shadow duration-300"
           >
             <Image
-              src={post.thumbnail}
+              src={"/images/social-media.jpg"}
               alt="post"
               width={400}
               height={200}
@@ -96,7 +70,7 @@ export default function Section6() {
               <h2 className="text-black font-semibold mb-2">{post.title}</h2>
               <hr className="border-t border-gray-300 mb-2" />
               <div className="flex justify-between text-gray-500 text-sm">
-                <span>{post.date}</span>
+                <span>{post.created_at.split("T")[0]}</span>
                 <span className="hover:text-red-600 cursor-pointer">
                   Read more
                 </span>
