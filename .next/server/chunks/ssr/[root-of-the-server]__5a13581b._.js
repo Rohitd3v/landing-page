@@ -1736,88 +1736,6 @@ function Section5() {
     }, this);
 }
 }),
-"[externals]/stream [external] (stream, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("stream", () => require("stream"));
-
-module.exports = mod;
-}),
-"[externals]/http [external] (http, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("http", () => require("http"));
-
-module.exports = mod;
-}),
-"[externals]/url [external] (url, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("url", () => require("url"));
-
-module.exports = mod;
-}),
-"[externals]/punycode [external] (punycode, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("punycode", () => require("punycode"));
-
-module.exports = mod;
-}),
-"[externals]/https [external] (https, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("https", () => require("https"));
-
-module.exports = mod;
-}),
-"[externals]/zlib [external] (zlib, cjs)", ((__turbopack_context__, module, exports) => {
-
-const mod = __turbopack_context__.x("zlib", () => require("zlib"));
-
-module.exports = mod;
-}),
-"[project]/src/app/components/utils/supabase/server.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "supabase",
-    ()=>supabase
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$supabase$2d$js$2f$dist$2f$module$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/@supabase/supabase-js/dist/module/index.js [app-rsc] (ecmascript) <locals>");
-;
-const supabaseUrl = ("TURBOPACK compile-time value", "https://uzcoqdgdrqdxiumeazbl.supabase.co");
-const supabaseKey = ("TURBOPACK compile-time value", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6Y29xZGdkcnFkeGl1bWVhemJsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc5MTQ2MzQsImV4cCI6MjA3MzQ5MDYzNH0.eJarhglQ1jkF2b1EFW3l55ywL__XJNi7YqM6uc-4hek");
-if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
-;
-const supabase = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$supabase$2d$js$2f$dist$2f$module$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createClient"])(supabaseUrl, supabaseKey);
-}),
-"[project]/src/app/components/utils/supabase/loadblogs.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "getBlogPosts",
-    ()=>getBlogPosts
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$utils$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/utils/supabase/server.ts [app-rsc] (ecmascript)");
-;
-async function getBlogPosts() {
-    const { data, error } = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$utils$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["supabase"].from("blog_posts").select(`
-      id,
-      title,
-      author,
-      created_at,
-      blog_sections (
-        heading,
-        content,
-        section_order
-      )
-    `).order("created_at", {
-        ascending: false
-    });
-    if (error) {
-        console.error("Error fetching blog posts:", error.message);
-        return [];
-    }
-    console.log("fetch blog post sucessfull");
-    return data ?? [];
-}
-}),
 "[project]/src/app/components/section6.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1828,13 +1746,10 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$utils$2f$buttons$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/utils/buttons.tsx [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$utils$2f$supabase$2f$loadblogs$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/utils/supabase/loadblogs.tsx [app-rsc] (ecmascript)");
 ;
 ;
 ;
-;
-async function Section6() {
-    const posts = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$utils$2f$supabase$2f$loadblogs$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getBlogPosts"])();
+async function Section6({ posts }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "w-full bg-white py-12 px-4 sm:px-6 lg:px-20",
         children: [
@@ -2478,7 +2393,7 @@ async function BlogCarousel({ posts }) {
                                         className: "w-full h-40 object-cover rounded-md mb-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/BlogCarousel.tsx",
-                                        lineNumber: 21,
+                                        lineNumber: 25,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2486,7 +2401,7 @@ async function BlogCarousel({ posts }) {
                                         children: post.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/BlogCarousel.tsx",
-                                        lineNumber: 29,
+                                        lineNumber: 33,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2494,38 +2409,38 @@ async function BlogCarousel({ posts }) {
                                         children: post.blog_sections[0].content
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/BlogCarousel.tsx",
-                                        lineNumber: 32,
+                                        lineNumber: 36,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/BlogCarousel.tsx",
-                                lineNumber: 20,
+                                lineNumber: 24,
                                 columnNumber: 17
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/BlogCarousel.tsx",
-                            lineNumber: 19,
+                            lineNumber: 23,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/BlogCarousel.tsx",
-                        lineNumber: 18,
+                        lineNumber: 22,
                         columnNumber: 13
                     }, this)
                 }, index, false, {
                     fileName: "[project]/src/app/components/BlogCarousel.tsx",
-                    lineNumber: 17,
+                    lineNumber: 21,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/src/app/components/BlogCarousel.tsx",
-            lineNumber: 15,
+            lineNumber: 19,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/components/BlogCarousel.tsx",
-        lineNumber: 14,
+        lineNumber: 18,
         columnNumber: 5
     }, this);
 }
@@ -2558,7 +2473,7 @@ function Section8({ posts }) {
                                 children: "Article and News"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/components/section8.tsx",
-                                lineNumber: 10,
+                                lineNumber: 9,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2567,20 +2482,20 @@ function Section8({ posts }) {
                                     "Get every single ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/src/app/components/section8.tsx",
-                                        lineNumber: 12,
+                                        lineNumber: 11,
                                         columnNumber: 30
                                     }, this),
                                     "news and blogs"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/components/section8.tsx",
-                                lineNumber: 11,
+                                lineNumber: 10,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/components/section8.tsx",
-                        lineNumber: 9,
+                        lineNumber: 8,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2589,18 +2504,18 @@ function Section8({ posts }) {
                             children: "Browse Services"
                         }, void 0, false, {
                             fileName: "[project]/src/app/components/section8.tsx",
-                            lineNumber: 19,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/components/section8.tsx",
-                        lineNumber: 18,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/components/section8.tsx",
-                lineNumber: 7,
+                lineNumber: 6,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2608,20 +2523,102 @@ function Section8({ posts }) {
                     posts: posts
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/section8.tsx",
-                    lineNumber: 24,
+                    lineNumber: 23,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/section8.tsx",
-                lineNumber: 23,
+                lineNumber: 22,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/section8.tsx",
-        lineNumber: 6,
+        lineNumber: 5,
         columnNumber: 5
     }, this);
+}
+}),
+"[externals]/stream [external] (stream, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("stream", () => require("stream"));
+
+module.exports = mod;
+}),
+"[externals]/http [external] (http, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("http", () => require("http"));
+
+module.exports = mod;
+}),
+"[externals]/url [external] (url, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("url", () => require("url"));
+
+module.exports = mod;
+}),
+"[externals]/punycode [external] (punycode, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("punycode", () => require("punycode"));
+
+module.exports = mod;
+}),
+"[externals]/https [external] (https, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("https", () => require("https"));
+
+module.exports = mod;
+}),
+"[externals]/zlib [external] (zlib, cjs)", ((__turbopack_context__, module, exports) => {
+
+const mod = __turbopack_context__.x("zlib", () => require("zlib"));
+
+module.exports = mod;
+}),
+"[project]/src/app/components/utils/supabase/server.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "supabase",
+    ()=>supabase
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$supabase$2d$js$2f$dist$2f$module$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/@supabase/supabase-js/dist/module/index.js [app-rsc] (ecmascript) <locals>");
+;
+const supabaseUrl = ("TURBOPACK compile-time value", "https://uzcoqdgdrqdxiumeazbl.supabase.co");
+const supabaseKey = ("TURBOPACK compile-time value", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV6Y29xZGdkcnFkeGl1bWVhemJsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc5MTQ2MzQsImV4cCI6MjA3MzQ5MDYzNH0.eJarhglQ1jkF2b1EFW3l55ywL__XJNi7YqM6uc-4hek");
+if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+;
+const supabase = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$supabase$2f$supabase$2d$js$2f$dist$2f$module$2f$index$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createClient"])(supabaseUrl, supabaseKey);
+}),
+"[project]/src/app/components/utils/supabase/loadblogs.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getBlogPosts",
+    ()=>getBlogPosts
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$utils$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/utils/supabase/server.ts [app-rsc] (ecmascript)");
+;
+async function getBlogPosts() {
+    const { data, error } = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$utils$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["supabase"].from("blog_posts").select(`
+      id,
+      title,
+      author,
+      created_at,
+      blog_sections (
+        heading,
+        content,
+        section_order
+      )
+    `).order("created_at", {
+        ascending: false
+    });
+    if (error) {
+        console.error("Error fetching blog posts:", error.message);
+        return [];
+    }
+    console.log("fetch blog post sucessfull");
+    return data ?? [];
 }
 }),
 "[project]/src/app/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
@@ -2655,8 +2652,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$
 ;
 ;
 ;
-function Home() {
-    const posts = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$utils$2f$supabase$2f$loadblogs$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getBlogPosts"])();
+async function Home() {
+    const posts = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$utils$2f$supabase$2f$loadblogs$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getBlogPosts"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "w-full bg-[#E3E2E0] ",
         children: [
@@ -2690,7 +2687,9 @@ function Home() {
                 lineNumber: 22,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$section6$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$section6$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                posts: posts
+            }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
                 lineNumber: 23,
                 columnNumber: 7
@@ -2700,7 +2699,9 @@ function Home() {
                 lineNumber: 24,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$section8$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$section8$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                posts: posts
+            }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
                 lineNumber: 25,
                 columnNumber: 7
@@ -2730,4 +2731,4 @@ module.exports = mod;
 }),
 ];
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__3a99bc0b._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__5a13581b._.js.map

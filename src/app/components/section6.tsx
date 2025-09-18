@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { Button2 } from "./utils/buttons";
-import { getBlogPosts } from "./utils/supabase/loadblogs";
-
-export default async function Section6() {
-  const posts = await getBlogPosts();
-
+import { BlogPostWithSections } from "./utils/supabase/Relationtype";
+interface BlogCarouselProps {
+  posts: BlogPostWithSections;
+}
+export default async function Section6({ posts }: BlogCarouselProps) {
   return (
     <div className="w-full bg-white py-12 px-4 sm:px-6 lg:px-20">
       {/* Header Section */}
@@ -54,7 +54,7 @@ export default async function Section6() {
 
       {/* Posts Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-        {posts.map((post, index) => (
+        {posts.map((post: BlogPostWithSections, index: number) => (
           <div
             key={index}
             className=" overflow-hidden hover:shadow-lg transition-shadow duration-300"

@@ -1,7 +1,6 @@
 import { BlogCarousel } from "./BlogCarousel";
 import { Button3 } from "./utils/buttons";
-
-export default function Section8() {
+export default function Section8({ posts }) {
   return (
     <div className="w-full bg-white p-6 py-12 px-4 sm:px-6 lg:px-20">
       <div className="flex justify-between items-center flex-wrap">
@@ -21,7 +20,7 @@ export default function Section8() {
       </div>
 
       <div>
-        <BlogCarousel />
+        <BlogCarousel posts={posts} />
       </div>
     </div>
   );

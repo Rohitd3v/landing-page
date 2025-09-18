@@ -8,14 +8,16 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { getBlogPosts } from "./utils/supabase/loadblogs";
-export async function BlogCarousel() {
-  const posts = await getBlogPosts();
+import { BlogPostWithSections } from "./utils/supabase/Relationtype";
 
+interface BlogCarouselProps {
+  posts: BlogPostWithSections;
+}
+export async function BlogCarousel({ posts }: BlogCarouselProps) {
   return (
     <Carousel className="w-full max-md mt-5">
       <CarouselContent className="-ml-1">
-        {posts.map((post, index) => (
+        {posts.map((post: BlogPostWithSections, index: number) => (
           <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
             <div className="p-1">
               <Card>
