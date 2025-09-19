@@ -6,18 +6,18 @@
   "rootMainFiles": [],
   "pages": {
     "/_error": [
-      "static/chunks/dbac0_next_dist_compiled_next-devtools_index_2f00fdd4.js",
-      "static/chunks/dbac0_next_dist_compiled_93d29fd3._.js",
-      "static/chunks/dbac0_next_dist_shared_lib_909c2cd4._.js",
-      "static/chunks/dbac0_next_dist_client_cb38d2d2._.js",
-      "static/chunks/dbac0_next_dist_5237c33a._.js",
-      "static/chunks/dbac0_next_error_9f3cc8ab.js",
-      "static/chunks/[next]_entry_page-loader_ts_c5ffd94e._.js",
-      "static/chunks/dbac0_react-dom_33ab005c._.js",
-      "static/chunks/dbac0_9b852083._.js",
-      "static/chunks/[root-of-the-server]__8deb0e28._.js",
-      "static/chunks/business-consulting_pages__error_2da965e7._.js",
-      "static/chunks/turbopack-business-consulting_pages__error_8a3e3999._.js"
+      "static/chunks/node_modules_next_dist_compiled_next-devtools_index_5277ebc8.js",
+      "static/chunks/node_modules_next_dist_compiled_166120c5._.js",
+      "static/chunks/node_modules_next_dist_shared_lib_b4122b32._.js",
+      "static/chunks/node_modules_next_dist_client_d0aa886c._.js",
+      "static/chunks/node_modules_next_dist_0cccb603._.js",
+      "static/chunks/node_modules_next_error_1cfbb379.js",
+      "static/chunks/[next]_entry_page-loader_ts_43b523b5._.js",
+      "static/chunks/node_modules_react-dom_4411d9bd._.js",
+      "static/chunks/node_modules_db4bb196._.js",
+      "static/chunks/[root-of-the-server]__092393de._.js",
+      "static/chunks/pages__error_2da965e7._.js",
+      "static/chunks/turbopack-pages__error_18aa0e75._.js"
     ]
   },
   "ampFirstPages": []

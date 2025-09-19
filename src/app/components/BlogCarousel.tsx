@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/carousel";
 import { BlogPostWithSections } from "./utils/supabase/Relationtype";
 
+import Link from "next/link";
+
 interface BlogCarouselProps {
   posts: BlogPostWithSections[];
 }
@@ -31,9 +33,17 @@ export async function BlogCarousel({ posts }: BlogCarouselProps) {
                   <h3 className="text-lg font-semibold text-black mb-2">
                     {post.title}
                   </h3>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-sm text-gray-500 line-clamp-1">
                     {post.blog_sections[0].content}
                   </p>
+                  <div className="flex mt-3">
+                    <Link
+                      href={`/blog/${post.id}`}
+                      className="hover:text-red-600"
+                    >
+                      Read more →
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </div>

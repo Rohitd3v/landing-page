@@ -9,7 +9,7 @@ R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthor
 R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_global-error_ece394eb.js")
 R.c("server/chunks/ssr/node_modules_@supabase_node-fetch_lib_index_b500a2e1.js")
 R.c("server/chunks/ssr/[root-of-the-server]__5a13581b._.js")
-R.c("server/chunks/ssr/node_modules_next_b3277899._.js")
+R.c("server/chunks/ssr/node_modules_next_eea971ac._.js")
 R.c("server/chunks/ssr/node_modules_react-icons_fa_index_mjs_8e3a79ec._.js")
 R.c("server/chunks/ssr/node_modules_react-icons_lib_2ebb85a8._.js")
 R.c("server/chunks/ssr/node_modules_@headlessui_react_dist_eac96528._.js")

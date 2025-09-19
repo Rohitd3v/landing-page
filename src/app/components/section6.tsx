@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button2 } from "./utils/buttons";
 import { BlogPostWithSections } from "./utils/supabase/Relationtype";
+import Link from "next/link";
 interface BlogCarouselProps {
   posts: BlogPostWithSections[];
 }
@@ -74,7 +75,12 @@ export default async function Section6({ posts }: BlogCarouselProps) {
                   {post.created_at ? post.created_at.split("T")[0] : "Unknown"}
                 </span>
                 <span className="hover:text-red-600 cursor-pointer">
-                  Read more
+                  <Link
+                    href={`/blog/${post.id}`}
+                    className="hover:text-red-600"
+                  >
+                    Read more →
+                  </Link>
                 </span>
               </div>
             </div>

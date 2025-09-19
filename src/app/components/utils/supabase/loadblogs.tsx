@@ -25,7 +25,5 @@ export async function getBlogPosts(): Promise<BlogPostWithSections[]> {
     return [];
   }
 
-  console.log("fetch blog post sucessfull");
-
   return (data ?? []) as BlogPostWithSections[];
 }
