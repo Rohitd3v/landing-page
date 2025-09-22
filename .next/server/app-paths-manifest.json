@@ -1,5 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/blog/[id]/page": "app/blog/[id]/page.js",
   "/blogform/page": "app/blogform/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",

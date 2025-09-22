@@ -6,13 +6,17 @@ export async function uploadThumbnail(file: File): Promise<string | null> {
     const fileName = `${Date.now()}.${fileExt}`;
     const filePath = `thumbnails/${fileName}`;
 
-    // Upload file
+    // Upload file with explicit content type and cache control
     const { error: uploadError } = await supabase.storage
       .from("blog-thumbnails")
-      .upload(filePath, file);
+      .upload(filePath, file, {
+        contentType: file.type || "application/octet-stream",
+        cacheControl: "3600",
+        upsert: true,
+      });
 
     if (uploadError) {
-      console.error("Error uploading file:", uploadError.message);
+      console.error("Error uploading file:", uploadError);
       return null;
     }
 
