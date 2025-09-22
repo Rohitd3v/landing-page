@@ -2,13 +2,14 @@ import { GetSingleBlog } from "@/app/components/utils/supabase/GetSingleBlog";
 
 import Head from "next/head";
 interface BlogPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function Blog({ params }: BlogPageProps) {
-  const id = parseInt(params.id, 10);
+  const resolvedParams = await params;
+  const id = parseInt(resolvedParams.id, 10);
   const post = await GetSingleBlog(id);
 
   if (!post) {
