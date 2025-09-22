@@ -19,7 +19,9 @@ export default function BlogForm() {
 
   const updateSection = (index: number, field: string, value: string) => {
     const updated = [...sections];
-    (updated[index] as any)[field] = value;
+    if (field === 'heading' || field === 'content') {
+      updated[index] = { ...updated[index], [field]: value };
+    }
     setSections(updated);
   };
 
