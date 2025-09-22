@@ -1,6 +1,12 @@
 import { BlogCarousel } from "./BlogCarousel";
 import { Button3 } from "./utils/buttons";
-export default function Section8({ posts }: any) {
+import type { BlogPostWithSections } from "./utils/supabase/Relationtype";
+
+interface Section8Props {
+  posts: BlogPostWithSections[];
+}
+
+export default function Section8({ posts }: Section8Props) {
   return (
     <div className="w-full bg-white p-6 py-12 px-4 sm:px-6 lg:px-20">
       <div className="flex justify-between items-center flex-wrap">
