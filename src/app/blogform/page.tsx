@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
-import { createBlogPost } from "../components/utils/supabase/blogService";
-import { uploadThumbnail } from "../components/utils/supabase/uploadThumbnail";
+import { createBlogPost, uploadThumbnail } from "@/features/blog/api";
 
 export default function BlogForm() {
   const [title, setTitle] = useState("");

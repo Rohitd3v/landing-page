@@ -21,22 +21,22 @@ const LogoSwiper = () => {
       }}
     >
       <SwiperSlide className="flex justify-center items-center">
-        <img src="/images/tcs.png" alt="tcs" className="h-8 w-auto" />
+        <Image src="/images/tcs.png" alt="tcs" width={100} height={32} className="h-8 w-auto" />
       </SwiperSlide>
       <SwiperSlide className="flex justify-center items-center">
-        <img src="/images/meta.png" alt="meta" className="h-8 w-auto" />
+        <Image src="/images/meta.png" alt="meta" width={100} height={32} className="h-8 w-auto" />
       </SwiperSlide>
       <SwiperSlide className="flex justify-center items-center">
-        <img src="/images/Infosys.png" alt="Infosys" className="h-8 w-auto" />
+        <Image src="/images/Infosys.png" alt="Infosys" width={100} height={32} className="h-8 w-auto" />
       </SwiperSlide>
       <SwiperSlide className="flex justify-center items-center">
-        <img src="/images/tcs.png" alt="tcs" className="h-8 w-auto" />
+        <Image src="/images/tcs.png" alt="tcs" width={100} height={32} className="h-8 w-auto" />
       </SwiperSlide>
       <SwiperSlide className="flex justify-center items-center">
-        <img src="/images/meta.png" alt="meta" className="h-8 w-auto" />
+        <Image src="/images/meta.png" alt="meta" width={100} height={32} className="h-8 w-auto" />
       </SwiperSlide>
       <SwiperSlide className="flex justify-center items-center">
-        <img src="/images/Infosys.png" alt="Infosys" className="h-8 w-auto" />
+        <Image src="/images/Infosys.png" alt="Infosys" width={100} height={32} className="h-8 w-auto" />
       </SwiperSlide>
     </Swiper>
   );

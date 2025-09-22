@@ -6,7 +6,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import { BlogPostWithSections } from "./utils/supabase/Relationtype";
+import { BlogPostWithSections } from "@/features/blog/types";
 
 import Link from "next/link";
 
@@ -34,7 +34,7 @@ export async function BlogCarousel({ posts }: BlogCarouselProps) {
                     {post.title}
                   </h3>
                   <p className="text-sm text-gray-500 line-clamp-1">
-                    {post.blog_sections[0].content}
+                    {post.blog_sections?.[0]?.content ?? ""}
                   </p>
                   <div className="flex mt-3">
                     <Link

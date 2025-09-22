@@ -1,6 +1,8 @@
-import { GetSingleBlog } from "@/app/components/utils/supabase/GetSingleBlog";
+import { GetSingleBlog } from "@/features/blog/api";
+import type { BlogPostWithSections } from "@/features/blog/types";
 
 import Head from "next/head";
+import Image from "next/image";
 interface BlogPageProps {
   params: Promise<{
     id: string;
@@ -26,9 +28,11 @@ export default async function Blog({ params }: BlogPageProps) {
 
       {/* Thumbnail */}
       {post.thumbnail && (
-        <img
+        <Image
           src={post.thumbnail}
           alt={post.title}
+          width={1200}
+          height={400}
           className="w-full h-64 object-cover rounded-xl mb-6"
         />
       )}
@@ -45,8 +49,16 @@ export default async function Blog({ params }: BlogPageProps) {
 
       <article className="prose lg:prose-lg">
         {post.blog_sections
-          ?.sort((a, b) => (a.section_order ?? 0) - (b.section_order ?? 0))
-          .map((section, index) => (
+          ?.sort(
+            (
+              a: BlogPostWithSections["blog_sections"][number],
+              b: BlogPostWithSections["blog_sections"][number],
+            ) => (a.section_order ?? 0) - (b.section_order ?? 0),
+          )
+          .map((
+            section: BlogPostWithSections["blog_sections"][number],
+            index: number,
+          ) => (
             <section key={index} className="mb-8">
               <h2 className="text-2xl font-semibold mb-3">{section.heading}</h2>
               <p>{section.content}</p>
